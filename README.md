@@ -32,3 +32,5 @@ P1: picking up left
 L: assigning 1 to chop[1]
 0 -1 2 
 ```
+
+If something about my output doesn't look right, well, that's the entire reason why I made this thing :^)
