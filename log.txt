@@ -1,0 +1,92 @@
+0 asks for left
+-1 -1 -1 
+L: assigning 0 to chop[0]
+-1 -1 -1 
+
+0 -1 -1 
+1 asks for left
+0 -1 -1 
+L: assigning 1 to chop[1]
+0 -1 -1 
+
+0 1 -1 
+2 asks for left
+0 1 -1 
+L: assigning 2 to chop[2]
+0 1 -1 
+
+0 1 2 
+0 asks for right
+0 1 2 
+0 asks for left
+-1 1 2 
+L: assigning 0 to chop[0]
+-1 1 2 
+
+0 1 2 
+1 asks for right
+0 1 2 
+2 asks for right
+0 1 2 
+0 asks for right
+0 1 -1 
+2 asks for left
+0 -1 -1 
+L: assigning 2 to chop[2]
+0 -1 -1 
+
+0 -1 2 
+0 asks for left
+-1 -1 2 
+L: assigning 0 to chop[0]
+-1 -1 2 
+
+0 -1 2 
+1 asks for left
+0 -1 2 
+L: assigning 1 to chop[1]
+0 -1 2 
+
+0 1 2 
+2 asks for right
+0 1 2 
+0 asks for right
+0 1 2 
+1 asks for right
+-1 1 -1 
+R: assigning 1 to chop[2]
+-1 1 -1 
+
+-1 1 1 
+0 asks for left
+-1 1 1 
+L: assigning 0 to chop[0]
+-1 1 1 
+
+0 1 1 
+2 asks for left
+0 1 1 
+1 asks for left
+0 -1 -1 
+L: assigning 1 to chop[1]
+0 -1 -1 
+
+0 1 -1 
+0 asks for right
+0 1 -1 
+2 asks for right
+0 1 -1 
+1 asks for right
+-1 1 -1 
+R: assigning 1 to chop[2]
+-1 1 -1 
+
+-1 1 1 
+1 asks for left
+-1 -1 -1 
+L: assigning 1 to chop[1]
+-1 -1 -1 
+
+-1 1 -1 
+^C[mpiexec@virtual20] Sending Ctrl-C to processes as requested
+[mpiexec@virtual20] Press Ctrl-C again to force abort
