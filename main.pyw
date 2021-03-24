@@ -208,7 +208,7 @@ def main():
     timeLabel = tk.Label(bottomPart, text="Seconds per frame: ")
     timeLabel.pack(side=tk.LEFT)
 
-    timeEntry = tk.Entry(bottomPart, width=3, font="TkFixedFont")
+    timeEntry = tk.Entry(bottomPart, width=5, font="TkFixedFont")
     timeEntry.pack(side=tk.LEFT)
 
     frameLabelStr = tk.StringVar()
