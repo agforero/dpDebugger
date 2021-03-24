@@ -1,92 +1,111 @@
+$ mpic++ deadlock.cpp -o deadlock; mpirun -np 4 ./deadlock
+P0: thinking
+P1: thinking
+P2: thinking
+P0: picking up left
 0 asks for left
 -1 -1 -1 
 L: assigning 0 to chop[0]
 -1 -1 -1 
 
 0 -1 -1 
-1 asks for left
-0 -1 -1 
-L: assigning 1 to chop[1]
-0 -1 -1 
-
-0 1 -1 
-2 asks for left
-0 1 -1 
-L: assigning 2 to chop[2]
-0 1 -1 
-
-0 1 2 
-0 asks for right
-0 1 2 
-0 asks for left
--1 1 2 
-L: assigning 0 to chop[0]
--1 1 2 
-
-0 1 2 
-1 asks for right
-0 1 2 
-2 asks for right
-0 1 2 
-0 asks for right
-0 1 -1 
+P2: picking up left
 2 asks for left
 0 -1 -1 
 L: assigning 2 to chop[2]
 0 -1 -1 
 
 0 -1 2 
-0 asks for left
--1 -1 2 
-L: assigning 0 to chop[0]
--1 -1 2 
-
-0 -1 2 
+P1: picking up left
 1 asks for left
 0 -1 2 
 L: assigning 1 to chop[1]
 0 -1 2 
 
 0 1 2 
-2 asks for right
-0 1 2 
+P0: picking up right
+P0: eating
 0 asks for right
 0 1 2 
+P2: picking up right
+P2: eating
+2 asks for right
+0 1 2 
+P1: picking up right
+P1: eating
 1 asks for right
--1 1 -1 
-R: assigning 1 to chop[2]
--1 1 -1 
-
--1 1 1 
-0 asks for left
--1 1 1 
-L: assigning 0 to chop[0]
--1 1 1 
-
-0 1 1 
+0 1 2 
+P0: put back left
+P0: put back right
+P0: thinking
+P2: put back left
+P2: put back right
+P2: thinking
+P1: put back left
+P1: put back right
+P1: thinking
+P2: picking up left
 2 asks for left
-0 1 1 
-1 asks for left
-0 -1 -1 
-L: assigning 1 to chop[1]
-0 -1 -1 
+-1 -1 -1 
+L: assigning 2 to chop[2]
+-1 -1 -1 
 
-0 1 -1 
-0 asks for right
-0 1 -1 
+-1 -1 2 
+P0: picking up left
+0 asks for left
+-1 -1 2 
+L: assigning 0 to chop[0]
+-1 -1 2 
+
+0 -1 2 
+P1: picking up left
+1 asks for left
+0 -1 2 
+L: assigning 1 to chop[1]
+0 -1 2 
+
+0 1 2 
+P2: picking up right
+P2: eating
 2 asks for right
-0 1 -1 
+0 1 2 
+P0: picking up right
+P0: eating
+0 asks for right
+0 1 2 
+P1: picking up right
+P1: eating
 1 asks for right
--1 1 -1 
-R: assigning 1 to chop[2]
--1 1 -1 
-
--1 1 1 
+0 1 2 
+P1: put back left
+P1: put back right
+P1: thinking
+P2: put back left
+P2: put back right
+P2: thinking
+P1: picking up left
 1 asks for left
--1 -1 -1 
+0 -1 -1 
 L: assigning 1 to chop[1]
--1 -1 -1 
+0 -1 -1 
 
+0 1 -1 
+P0: put back left
+P0: put back right
+P0: thinking
+P2: picking up left
+2 asks for left
 -1 1 -1 
+L: assigning 2 to chop[2]
+-1 1 -1 
+
+-1 1 2 
+P0: picking up left
+0 asks for left
+-1 1 2 
+L: assigning 0 to chop[0]
+-1 1 2 
+
+0 1 2 
 ^C[mpiexec@virtual20] Sending Ctrl-C to processes as requested
 [mpiexec@virtual20] Press Ctrl-C again to force abort
